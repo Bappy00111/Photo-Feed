@@ -1,8 +1,8 @@
-import { getAllPhotoMeta } from "@/lib/image-data"
+import { getAllPhotos } from "@/lib/image-data"
 import { NextResponse } from "next/server";
 
 export  const  GET = async () =>{
-    const data = await getAllPhotoMeta();
+    const data = await getAllPhotos();
     return NextResponse.json(data)
 
 
